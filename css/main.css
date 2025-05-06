@@ -256,6 +256,10 @@ input.edit {
             margin-left: 10px;
             margin-right: 95px;
         }
+        .todo_list-global {
+            border-top-right-radius: 24px;
+            border-top-left-radius: 24px;
+        }
 }
 
 @media (max-height: 800px) and (max-width: 400px) {
@@ -265,5 +269,9 @@ input.edit {
     .todo_list-content_view i {
         margin-left: 10px;
         margin-right: 80px;
+    }
+    .todo_list-global {
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
     }
 }
