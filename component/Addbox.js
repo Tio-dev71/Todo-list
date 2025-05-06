@@ -15,7 +15,7 @@ function Addbox() {
             <div class="line"></div>
             <button class="todo_addbox-btn"
             autofocus
-            onclick = "dispatch('add', this.value.trim())"
+            onclick="dispatch('addbtn', document.querySelector('.todo_addbox-input').value.trim())"
             >Add</button>
         </div>
     `

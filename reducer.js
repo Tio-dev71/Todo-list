@@ -12,6 +12,14 @@ const init = {
 }
 
 const actions = {
+    addbtn({ todos }, title) {
+        if (title) { 
+            todos.push({ title, completed: false }); 
+            storage.set(todos);
+        } else {
+            console.error('Title is empty!'); 
+        }
+    },
     add({ todos }, title) {
         if(title) {    
             todos.push({ title, completed: false })
