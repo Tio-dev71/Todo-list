@@ -1,0 +1,269 @@
+body {
+    font-family: "Ubuntu", sans-serif !important;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px; 
+    background-image: linear-gradient( to right, #614486, #536094);
+    position: relative;
+}
+
+.header-title {
+    font-size: 50px;
+    color: aliceblue;
+    padding: 20px 0 20px 0;
+}
+
+.todo_addbox {
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 20px #000000;
+    border-radius: 24px;
+    max-width: 1000px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 100px;
+}
+
+.todo_addbox-input {
+    width: 500px;
+    margin-top: 20px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+.line {
+    width: 500px;
+    height: 1.5px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.todo_addbox-btn {
+    width: 250px;
+    height: 50px;
+    font-size: 32px;
+    font-weight: 100;
+    color: #fff;
+    background-color: #ED695A;
+    border-color: transparent;
+    border-radius: 12px;
+    box-shadow: 2px 3px 20px #ED695A;
+}
+
+.todo_addbox-btn:hover {
+    cursor: pointer;
+}
+
+.todo_list {
+    background-color: #ffffff;
+    box-shadow: 2px 3px 20px #000000;
+    border-radius: 24px;
+    width: 1000px;
+    height: auto;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo_list-head {
+    background-color: #d6d6d6;
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.todo_list-head_func {
+    background-color: #d6d6d6;
+    border-radius: 6px;
+}
+
+.selected {
+    color: #ED695A;
+}
+
+.todo_list-head_func:hover {
+    cursor: pointer;
+}
+
+.todo_list-head_item:hover {
+    cursor: pointer;
+}
+
+.todo_list-global {
+    width: 100%;
+    height: 40px;
+    background-color: #d6d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #696868;
+}
+
+.todo_list-content {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.todo_list-content_view {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.toggle {
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.todo_list-content {
+    list-style: none;
+}
+
+div label  {
+    width: 80%;
+    margin-left: 50px;
+}
+
+.destroy {
+    margin-left: -185px;
+}
+
+.destroy:hover {
+    cursor: pointer;
+}
+
+.completed div label{
+    color: #d9d9d9;
+	text-decoration: line-through;
+}
+
+input.edit {
+    width: 100%;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 5px;
+    border-color: #14d41d;
+    margin: 0 250px 0 50px;
+    display: none;
+}
+
+.todo_list-content.edit div {
+    display: none;
+}
+
+.todo_list-content.edit input.edit{
+    display: block;
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filters {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+.filters button a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 850px) and (max-width: 900px) and (max-height: 1200px) {
+        .todo_addbox {
+            margin: 0 20px 0 20px;            
+        }
+        .todo_list {
+            width: 850px;
+        }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+        .todo_addbox {
+            margin: 0 20px 0 20px;          
+        }
+        .todo_list {
+            width: 750px;
+        }
+}
+
+@media (max-height: 950px) and (max-width: 450px) {
+        .todo_addbox {
+            margin: 0 10px 0 10px;          
+        }
+        .todo_addbox input {
+            width: 90%;
+            font-size: 20px;
+        }
+        .line {
+            width: 90%;
+        }
+        .todo_list {
+            width: 400px;
+        }
+        .header-title {
+            font-size: 36px;
+        }
+        .todo_addbox-btn {
+            font-size: 24px;
+        }
+        .todo_list-head {
+            display: none;
+        }
+        .todo_list-content_view label {
+            margin: 0 0 0 20px;
+        }
+        .todo_list-content_view input {
+            margin: 0 10px;
+        }
+        .todo_list-content_view i {
+            margin-left: 10px;
+            margin-right: 95px;
+        }
+}
+
+@media (max-height: 800px) and (max-width: 400px) {
+    .todo_list {
+        width: 340px;
+    }
+    .todo_list-content_view i {
+        margin-left: 10px;
+        margin-right: 80px;
+    }
+}
